@@ -54,6 +54,11 @@ class VideoListViewController: UIViewController {
         tempVideos.append(video12)
         return tempVideos
     }
+    //Code for Showing clicked image number in log
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(videos[indexPath.row].title)
+        
+    }
 
 }
 
