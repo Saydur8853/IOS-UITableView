@@ -78,11 +78,53 @@
                     <navigationItem key="navigationItem" id="Ua2-SJ-epk"/>
                     <connections>
                         <outlet property="tableView" destination="Qrv-lI-tPG" id="isE-Re-GQR"/>
+                        <segue destination="60H-Jb-MP7" kind="show" identifier="showDetail" id="Jpo-uZ-bU6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="800.79999999999995" y="133.5832083958021"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="wGf-xe-6JK">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="60H-Jb-MP7" customClass="DetailViewController" customModule="tableviewtest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="13J-Mt-TWn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fI-gv-NCZ">
+                                <rect key="frame" x="146" y="528" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A4Z-Po-Dkr">
+                                <rect key="frame" x="16" y="123" width="343" height="346"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Uut-yR-FlN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6fI-gv-NCZ" firstAttribute="centerX" secondItem="A4Z-Po-Dkr" secondAttribute="centerX" id="FwI-Ou-cgq"/>
+                            <constraint firstItem="6fI-gv-NCZ" firstAttribute="leading" secondItem="grD-7s-s9L" secondAttribute="leading" constant="146" id="GC9-wq-2Mb"/>
+                            <constraint firstItem="6fI-gv-NCZ" firstAttribute="centerX" secondItem="13J-Mt-TWn" secondAttribute="centerX" id="GhQ-QB-S3I"/>
+                            <constraint firstItem="6fI-gv-NCZ" firstAttribute="top" secondItem="A4Z-Po-Dkr" secondAttribute="bottom" constant="59" id="Uf6-Yj-4bu"/>
+                            <constraint firstItem="grD-7s-s9L" firstAttribute="bottom" secondItem="6fI-gv-NCZ" secondAttribute="bottom" constant="118" id="aNf-BO-bdx"/>
+                            <constraint firstItem="A4Z-Po-Dkr" firstAttribute="top" secondItem="grD-7s-s9L" secondAttribute="top" constant="59" id="xLE-9H-8vy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="grD-7s-s9L"/>
+                    </view>
+                    <connections>
+                        <outlet property="videoImageView" destination="A4Z-Po-Dkr" id="MSq-SB-vX5"/>
+                        <outlet property="videoTitle" destination="6fI-gv-NCZ" id="rub-6q-Kwa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iOQ-ry-Y6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1605.5999999999999" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="e0s-g2-bU5">

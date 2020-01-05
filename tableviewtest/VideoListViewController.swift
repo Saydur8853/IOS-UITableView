@@ -13,7 +13,7 @@ class VideoListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var videos: [Video] = []
-
+    var tempVideo:Video! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,7 @@ class VideoListViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
     }
     
     func createArray() -> [Video] {
@@ -54,11 +55,8 @@ class VideoListViewController: UIViewController {
         tempVideos.append(video12)
         return tempVideos
     }
-    //Code for Showing clicked image number in log
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(videos[indexPath.row].title)
+    
         
-    }
 
 }
 
@@ -76,7 +74,23 @@ extension VideoListViewController: UITableViewDataSource, UITableViewDelegate{
         
         return cell
         
+    }
+    
+    //code for Showing in another ViewControler 
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
+        print(videos[indexPath.row].title)
+        
+        
+        tempVideo = videos[indexPath.row]
+        performSegue(withIdentifier: "showDetail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DetailViewController {
+            destination.video = tempVideo
+        }
     }
 }

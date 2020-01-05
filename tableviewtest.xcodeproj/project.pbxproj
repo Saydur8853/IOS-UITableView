@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		900E301023C286D90052C887 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E300F23C286D90052C887 /* DetailViewController.swift */; };
 		90FB02D723BCA013001A8779 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FB02D623BCA013001A8779 /* AppDelegate.swift */; };
 		90FB02DC23BCA014001A8779 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90FB02DA23BCA014001A8779 /* Main.storyboard */; };
 		90FB02DE23BCA016001A8779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90FB02DD23BCA016001A8779 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		900E300F23C286D90052C887 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		90FB02D323BCA013001A8779 /* tableviewtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableviewtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90FB02D623BCA013001A8779 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90FB02DB23BCA014001A8779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				90FB030623BCA141001A8779 /* VideoListViewController.swift */,
 				90FB030823BCB100001A8779 /* VideoCell.swift */,
 				90FB030A23BCB62C001A8779 /* Video.swift */,
+				900E300F23C286D90052C887 /* DetailViewController.swift */,
 				90FB02DA23BCA014001A8779 /* Main.storyboard */,
 				90FB02DD23BCA016001A8779 /* Assets.xcassets */,
 				90FB02DF23BCA016001A8779 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				90FB030723BCA141001A8779 /* VideoListViewController.swift in Sources */,
 				90FB030B23BCB62C001A8779 /* Video.swift in Sources */,
+				900E301023C286D90052C887 /* DetailViewController.swift in Sources */,
 				90FB02D723BCA013001A8779 /* AppDelegate.swift in Sources */,
 				90FB030923BCB100001A8779 /* VideoCell.swift in Sources */,
 			);
